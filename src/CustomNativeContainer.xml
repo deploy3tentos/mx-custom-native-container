@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget
+    id="com.3tentos.widget.native.customnativecontainer.CustomNativeContainer"
+    pluginWidget="true"
+    needsEntityContext="true"
+    offlineCapable="true"
+    supportedPlatform="Native"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
+>
+    <name>Custom Native Container</name>
+    <description>Custom native container widget for mobile apps</description>
+    <studioProCategory>Structure</studioProCategory>
+    <icon />
+    <properties>
+        <propertyGroup caption="General">
+            <propertyGroup caption="Visibility">
+                <systemProperty key="Visibility" />
+            </propertyGroup>
+
+            <propertyGroup caption="Events">
+                <property key="onClickAction" type="action" required="false">
+                    <caption>On Click</caption>
+                    <description />
+                </property>
+                <property key="onClickActionDisabledDuringAction" type="boolean" defaultValue="true">
+                    <caption>Disabled during action</caption>
+                    <description />
+                </property>
+                <property key="onLongPressAction" type="action" required="false">
+                    <caption>On Long Press</caption>
+                    <description />
+                </property>
+                <property key="onLongPressActionDisabledDuringAction" type="boolean" defaultValue="true">
+                    <caption>Disabled during action</caption>
+                    <description />
+                </property>
+            </propertyGroup>
+
+            <propertyGroup caption="Common">
+                <property key="content" type="widgets" required="false">
+                    <caption>Content</caption>
+                    <description>Widgets to place inside.</description>
+                </property>
+                <systemProperty key="Name" />
+            </propertyGroup>
+        </propertyGroup>
+    </properties>
+</widget>
